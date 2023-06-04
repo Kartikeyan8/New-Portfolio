@@ -1,10 +1,8 @@
-import React, { useRef } from 'react';
-import '../style/Home.css';
-import BlockCard from './Blogcard';
-import { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Typed from "typed.js";
-import { useEffect } from "react";
+import '../style/Home.css';
+import BlockCard from './Blogcard';
 
 const Home = () => {
   const [heading, setHeading] = useState('सौभाग्य न सब दिन सोता है ');
@@ -15,7 +13,7 @@ const Home = () => {
     setIsTranslating(true);
     setTimeout(() => {
       setHeading((prevHeading) => {
-        return prevHeading === 'cc सौभाग्य न सब दिन सोता है'
+        return prevHeading === 'सौभाग्य न सब दिन सोता है'
           ? "Luck doesn't sleep all day"
           : 'सौभाग्य न सब दिन सोता है';
       });
@@ -63,7 +61,7 @@ const Home = () => {
         <h2 className="title">About Me</h2>
         <div className="about-content">
           <div className="column right">
-            <h1 className='latest-title'>RECENT ARTICLES</h1>
+            <h1 className='latest-title'>MY RECENT ARTICLES</h1>
             <BlockCard />
           </div>
           <div className="column left">

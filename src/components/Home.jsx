@@ -15,7 +15,7 @@ const Home = () => {
     setIsTranslating(true);
     setTimeout(() => {
       setHeading((prevHeading) => {
-        return prevHeading === 'सौभाग्य न सब दिन सोता है'
+        return prevHeading === 'cc सौभाग्य न सब दिन सोता है'
           ? "Luck doesn't sleep all day"
           : 'सौभाग्य न सब दिन सोता है';
       });

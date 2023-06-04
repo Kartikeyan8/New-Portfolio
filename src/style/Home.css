@@ -1,0 +1,143 @@
+.max-width {
+  max-width: 1200px;
+  margin: 0 ;
+}
+
+.quote {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.subtext {
+  font-weight: 600;
+  font-size: 7.5rem;
+  padding-top: 1rem; /* Adjust the padding as needed */
+  padding-bottom: 0.5em;
+  letter-spacing: -11px;
+  text-align: center;
+  line-height: 12rem;
+}
+
+.heading {
+  transition: all 1s ease;
+}
+
+.transitioning {
+  transform: scale(2);
+  opacity: 0;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+.translate-button {
+ 
+  padding: 15px 5px;
+  background-color: #f7f2f2;
+  color: #1c1c1c;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  
+  display: block; /* Change to block to make it a block-level element */
+  margin: 0 auto; /* Center the button horizontally */
+  margin-top: 10px
+}
+
+.author {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 1px;
+  color: #fff;
+}
+
+.title {
+  font-size: 132px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.latest-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.column {
+  flex-basis: 50%;
+}
+
+.right {
+  text-align: center;
+  height: 50vh;
+}
+
+.left {
+  text-align: center;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.about-text {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.connect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.connect-img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.connect-img:last-child {
+  margin-right: 0;
+}
+
+.connect-img:hover {
+  background-color: #a5a0a0;
+  cursor: pointer;
+  color: #f5dddd;
+  transition: linear 0.3s;
+}
+
+#about {
+  margin-top: 10px;
+  padding: 20px;
+}
+
+.connect {
+  margin-top: 10px;
+  padding: 20px;
+  background-color: #000;
+  color: #fff;
+}

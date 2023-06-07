@@ -9,25 +9,18 @@ const Home = () => {
   const [isTranslating, setIsTranslating] = useState(false);
   
   const handleClick = () => {
-  if (!isTranslating) {
-    setIsTranslating(true);
-    setTimeout(() => {
-      setHeading((prevHeading) => {
-        return prevHeading === 'सौभाग्य न सब दिन सोता है'
-          ? "Luck doesn't sleep all day"
-          : 'सौभाग्य न सब दिन सोता है';
-      });
-      setIsTranslating(false);
-    }, 1000);
+    if (!isTranslating) {
+      setIsTranslating(true);
+      setTimeout(() => {
+        setHeading((prevHeading) => {
+          return prevHeading === 'सौभाग्य न सब दिन सोता है'
+            ? "Luck doesn't sleep all day"
+            : 'सौभाग्य न सब दिन सोता है';
+        });
+        setIsTranslating(false);
+      }, 1000);
+    }
   }
-}
-    // setIsTranslating(true);
-    // setTimeout(() => {
-    //    setHeading("Luck doesn't sleep all day");
-    //   setIsTranslating(false);
-    // }, 2000);
-
-;
 
   const el = useRef(null);
   
@@ -54,7 +47,6 @@ const Home = () => {
             {heading}
           </h1>
           <button onClick={handleClick} className='translate-button'>Translate </button>
-          
         </div>
       </div>
       <div className="max-width">
@@ -76,11 +68,21 @@ const Home = () => {
               I love to connect with people from all walks of life, so please don’t hesitate to send me a message.
             </p>
             <div className="connect">
-              <img src="https://img.icons8.com/ios/50/000000/linkedin.png" alt="linkedin" className="connect-img" />
-              <img src="https://img.icons8.com/ios/50/000000/github.png" alt="github" className="connect-img" />
-              <img src="https://img.icons8.com/ios/50/000000/twitter.png" alt="twitter" className="connect-img" />
-              <img src="https://img.icons8.com/ios/50/000000/instagram-new.png" alt="instagram" className="connect-img" />
-              <img src="https://img.icons8.com/ios/50/000000/mail.png" alt="mail" className="connect-img" />
+              <a href="https://www.linkedin.com/in/kartikeyan-bhatt-80841020b/">
+                <img src="https://img.icons8.com/ios/50/000000/linkedin.png" alt="linkedin" className="connect-img" />
+              </a>
+              <a href="https://github.com/Kartikeyan8?tab=repositories">
+                <img src="https://img.icons8.com/ios/50/000000/github.png" alt="github" className="connect-img" />
+              </a>
+              <a href="https://twitter.com/kartikey_0812">
+                <img src="https://img.icons8.com/ios/50/000000/twitter.png" alt="twitter" className="connect-img" />
+              </a>
+              <a href="https://www.instagram.com/kartikeyan_bhatt_/">
+                <img src="https://img.icons8.com/ios/50/000000/instagram-new.png" alt="instagram" className="connect-img" />
+              </a>
+              <a href="mailto:kartikeyan8112001@gmail.com">
+                <img src="https://img.icons8.com/ios/50/000000/mail.png" alt="mail" className="connect-img" />
+              </a>
             </div>
           </div>
         </div>

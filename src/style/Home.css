@@ -18,6 +18,25 @@
   text-align: center;
   line-height: 12rem;
 }
+.column.left.full-width {
+  width: 100%;
+}
+
+.toggle-nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.toggle-nav-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 
 .heading {
   transition: all 1s ease;
@@ -106,17 +125,22 @@
 
 .connect {
   display: flex;
-  justify-content: center;
+
+  justify-content: space-evenly;
   align-items: center;
   margin-bottom: 20px;
+  margin-right: 30px;
 }
 
 .connect-img {
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   margin-right: 10px;
   border-radius: 10px;
   background-color: #fff;
+  display: flex;
+  padding: 5px;
+  
 }
 
 .connect-img:last-child {

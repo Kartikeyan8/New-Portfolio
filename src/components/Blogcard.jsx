@@ -35,7 +35,9 @@ const BlogCard = () => {
         <Slider {...settings}>
           {blogs.map((blog, index) => (
             <div key={index}>
+              <a href={blog.link} >
               <img src={blog.image} alt="Blog Background" className="blog-image" />
+              </a>
               <div className="blog-title">{blog.title}</div>
               <div className="blog-date">{blog.date}</div>
             </div>

@@ -4,29 +4,30 @@ import Typed from "typed.js";
 import '../style/Home.css';
 import BlockCard from './Blogcard';
 
+const translations = {
+  'सौभाग्य न सब दिन सोता है': "Luck doesn't sleep all day",
+  "Luck doesn't sleep all day": 'सौभाग्य न सब दिन सोता है',
+};
+
 const Home = () => {
-  const [heading, setHeading] = useState('सौभाग्य न सब दिन सोता है ');
+  const [heading, setHeading] = useState('सौभाग्य न सब दिन सोता है');
   const [isTranslating, setIsTranslating] = useState(false);
-  
+
   const handleClick = () => {
     if (!isTranslating) {
       setIsTranslating(true);
       setTimeout(() => {
-        setHeading((prevHeading) => {
-          return prevHeading === 'सौभाग्य न सब दिन सोता है'
-            ? "Luck doesn't sleep all day"
-            : 'सौभाग्य न सब दिन सोता है';
-        });
+        setHeading((prevHeading) => translations[prevHeading]);
         setIsTranslating(false);
       }, 1000);
     }
-  }
+  };
 
   const el = useRef(null);
-  
+
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["Engineer", "Developer", "Actor", "ML Enthusiast", "Blogger"], 
+      strings: ["Engineer", "Developer", "Actor", "ML Enthusiast", "Blogger"],
       startDelay: 300,
       typeSpeed: 50,
       backSpeed: 100,
@@ -35,7 +36,7 @@ const Home = () => {
       showCursor: true,
     });
     return () => {
-      typed.destroy();      
+      typed.destroy();
     };
   }, []);
 
@@ -46,7 +47,9 @@ const Home = () => {
           <h1 className={`heading ${isTranslating ? 'transitioning' : ''}`}>
             {heading}
           </h1>
-          <button onClick={handleClick} className='translate-button'>Translate </button>
+          <button onClick={handleClick} className='translate-button'>
+            Translate
+          </button>
         </div>
       </div>
       <div className="max-width">
@@ -58,7 +61,7 @@ const Home = () => {
           </div>
           <div className="column left">
             <div className="text">
-              I'm a  <span ref={el}></span>
+              I'm a <span ref={el}></span>
             </div>
             <p className="about-text">
               I always had a fascination with computers but wasn't quite sure in which area I excelled. During the lockdown,

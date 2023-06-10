@@ -10,6 +10,7 @@ import './App.css';
 import './style/Up.css'
 import { BrowserRouter } from 'react-router-dom';
 import { Routes, Route } from 'react-router-dom';
+import DailyBlog from './components/Daily_blog';
 function App() {
   return (
     
@@ -19,6 +20,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects/>} />
           <Route path="/articles" element={<Articles/>} />
+          <Route path="/blogs" element={<DailyBlog/>}></Route>
         </Routes>
         
         <Footer /><Up />

@@ -14,9 +14,10 @@ export const blogs = [
     
   },
   {
-    title: "Coming Soon",
-    date: "Soon",
-    image: "https://picsum.photos/800/400",
+    title: "Vite vs. Traditional React Startup: A Comparative Analysis",
+    date: "23rd June 2023",
+    image: "https://miro.medium.com/v2/resize:fit:720/0*fhRTpClM5AEhAZa7",
+    link: "https://medium.com/p/e2dce8f4ddec"
     
   }
   ,{
